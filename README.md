@@ -9,4 +9,4 @@ yarn
 yarn dev
 ```
 
-We use [Next.js](https://nextjs.org/) and utilize [Nextra](https://nextra.site/)'s blog theme for our portfolio.
+Use [Next.js](https://nextjs.org/) and utilize [Nextra](https://nextra.site/)'s blog theme for our portfolio.
