@@ -1,12 +1,3 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  basePath: '/src',
-  images: {
-    unoptimized: true
-  }
-};
-
 const withNextra = require('nextra')({
   theme: 'nextra-theme-blog',
   themeConfig: './theme.config.tsx',
@@ -14,4 +5,10 @@ const withNextra = require('nextra')({
   defaultShowCopyCode: true
 });
 
-module.exports = withNextra({ nextConfig });
+module.exports = withNextra({
+  reactStrictMode: true,
+  basePath: '/src',
+  images: {
+    unoptimized: true
+  }
+});
