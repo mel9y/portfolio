@@ -1,10 +1,13 @@
 import pkg from './package.json' assert { type: 'json' };
 
+// @ts-ignore
+const authorName = pkg.author.name
+
 const themeConfig = {
   darkMode: true,
   footer: (
     <small style={{ display: 'block', marginTop: '8rem' }}>
-      {new Date().getFullYear()} © {pkg.author.name}
+      {new Date().getFullYear()} © {authorName}
       <a href={pkg.repository}>GitHub</a>
       <p>Running Next.js v{pkg.dependencies.next}</p>
       <style jsx>{`
