@@ -4,8 +4,9 @@ const themeConfig = {
   darkMode: true,
   footer: (
     <small style={{ display: 'block', marginTop: '8rem' }}>
-      {new Date().getFullYear()} © m2en
+      {new Date().getFullYear()} © {pkg.author.name}
       <a href={pkg.repository}>GitHub</a>
+      <p>Running Next.js v{pkg.dependencies.next}</p>
       <style jsx>{`
         a {
           float: right;
