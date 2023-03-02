@@ -1,7 +1,7 @@
 {
-  "name": "m2en.dev",
+  "name": "portfolio",
   "version": "0.1.0",
-  "repository": "https://github.com/m2en/m2en.dev",
+  "repository": "https://github.com/m2en/portfolio",
   "private": true,
   "scripts": {
     "dev": "next dev",
