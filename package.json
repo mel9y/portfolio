@@ -9,7 +9,7 @@
     "export": "next export",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --ignore-path .gitignore -w **/**/**/*.{ts,tsx,md,mdx}"
+    "format": "prettier -w **/**/*.{ts,tsx,md,mdx,json}"
   },
   "dependencies": {
     "next": "13.2.1",
