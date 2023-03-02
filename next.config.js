@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  basePath: '/src'
+  basePath: '/src',
+  images: {
+    unoptimized: true
+  }
 };
 
 const withNextra = require('nextra')({
