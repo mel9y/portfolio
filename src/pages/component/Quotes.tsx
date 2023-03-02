@@ -25,10 +25,10 @@ function Quotes() {
 
   return (
     <div className="text-center m-4">
-      <span className="fs-4 d-block">{data && data.lyrics}</span>
+      <span className="fs-5 d-block">{data && data.lyrics}</span>
       <br />
       <span className="d-block">
-        {data && data.songtitle} -- {data && data.artist}
+        {data && data.songtitle} / {data && data.artist}
       </span>
     </div>
   );
