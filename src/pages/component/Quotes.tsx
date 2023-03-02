@@ -3,8 +3,11 @@
 import { useEffect, useState } from 'react';
 
 export type Quote = {
+  // 歌詞
   lyrics: string;
-  songtitle: string;
+  // 曲名
+  title: string;
+  // アーティスト名
   artist: string;
 };
 
@@ -28,7 +31,7 @@ function Quotes() {
       <span className="fs-5 d-block">{data && data.lyrics}</span>
       <br />
       <span className="d-block">
-        {data && data.songtitle} / {data && data.artist}
+        {data && data.title} / {data && data.artist}
       </span>
     </div>
   );
