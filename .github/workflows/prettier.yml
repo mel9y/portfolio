@@ -1,0 +1,31 @@
+name: Prettier
+
+on:
+  # FIXME: Remove push trigger
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: prettier check - m2en.dev
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # https://endoflife.date/nodejs
+      - name: Setup Node.js v18
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Prettier check m2en.dev
+        run: yarn format

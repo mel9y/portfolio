@@ -1,0 +1,37 @@
+{
+  "name": "m2en.dev",
+  "version": "0.1.0",
+  "repository": "https://github.com/m2en/m2en.dev",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --ignore-path .gitignore -w **/**/**/*.{ts,tsx,md,mdx}"
+  },
+  "dependencies": {
+    "next": "13.2.1",
+    "nextra": "^2.2.16",
+    "nextra-theme-blog": "^2.2.16",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+    "@types/node": "18.13.0",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "eslint": "8.33.0",
+    "eslint-config-next": "13.1.6",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-mdx": "^2.0.5",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "prettier": "^2.8.4",
+    "typescript": "4.9.5"
+  }
+}
