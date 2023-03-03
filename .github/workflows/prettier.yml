@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    name: prettier check - m2en.dev
+    name: prettier check
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -27,5 +27,5 @@ jobs:
       - name: Install dependencies
         run: yarn install --immutable
 
-      - name: Prettier check m2en.dev
+      - name: Prettier check
         run: yarn format
