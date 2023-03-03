@@ -2,10 +2,10 @@
   "name": "portfolio",
   "version": "0.1.0",
   "author": {
-    "name": "m2en",
-    "email": "me@m2en.dev"
+    "name": "mel9y",
+    "email": "me@mel9y.dev"
   },
-  "repository": "https://github.com/m2en/portfolio",
+  "repository": "https://github.com/mel9y/portfolio",
   "private": true,
   "scripts": {
     "dev": "next dev",
