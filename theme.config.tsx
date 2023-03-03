@@ -22,7 +22,19 @@ const themeConfig = {
         }
       `}</style>
     </small>
-  )
+  ),
+  head: () => {
+    return <>
+      <title>mel9y</title>
+      <meta name="description" content='mel9y portfolio' />
+      <meta name='twitter:site' content='@mel9y' />
+      <meta name='og:url' content='https://mel9y.dev' />
+      <meta property="og:title" content="mel9y" />
+      <meta name="og:description" content='mel9y portfolio' />
+      <meta property="og:site_name" content="mel9y" />
+      <meta property="og:type" content="website" />
+    </>
+  }
 };
 
 export default themeConfig;

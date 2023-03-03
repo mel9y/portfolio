@@ -11,10 +11,9 @@ on:
 
 jobs:
   build:
-    name: eslint lint - m2en.dev
+    name: eslint lint
     runs-on: ubuntu-latest
     steps:
-
       - name: Checkout
         uses: actions/checkout@v3
 
@@ -25,9 +24,8 @@ jobs:
           node-version: '18'
           cache: yarn
 
-
       - name: Install dependencies
         run: yarn install --immutable
 
-      - name: ESLint check m2en.dev
+      - name: ESLint check
         run: yarn lint
