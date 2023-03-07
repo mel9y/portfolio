@@ -3,13 +3,19 @@ import pkg from './package.json' assert { type: 'json' };
 // @ts-ignore
 const authorName = pkg.author.name
 
+const faviconAuthorName = "QTONAGI"
+const faviconLink = 'https://twitter.com/' + faviconAuthorName
+
 const themeConfig = {
   darkMode: true,
   footer: (
     <small style={{ display: 'block', marginTop: '8rem' }}>
       {new Date().getFullYear()} © {authorName}
-      <a href={pkg.repository}>GitHub</a>
-      <p>Running Next.js v{pkg.dependencies.next}</p>
+      <a href={pkg.repository}>Source</a>
+      <p>
+        Running Next.js v{pkg.dependencies.next}
+        <a href={faviconLink}>Favicon: {faviconAuthorName}</a>
+      </p>
       <style jsx>{`
         a {
           float: right;
